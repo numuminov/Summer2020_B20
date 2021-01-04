@@ -1,22 +1,57 @@
 package day22_NestedLoop;
 
-public class occurancesOfChar {
+/*
+ 2. Write a program that can asks user to enter one string and one char and then returns the frequency of str2 in str1
+            Ex
+                 Input: AABAAC
+                        A
+                 Output: 4
+ */
+
+import java.util.Scanner;
+
+public class OccurancesOfChar {
+
     public static void main(String[] args) {
-        String str ="afgyhbcxzawertgvcxzaedrftfdsaaaa";
-        char ch='a';
-        int count =0;
+        Scanner scan = new Scanner(System.in);
 
-        for(int i =0; i<=str.length()-1;i++){
+        String str = scan.nextLine();
+        char ch = scan.next().charAt(0);
 
-            char each= str.charAt(i);
-            if(each==ch){
+        int count = 0 ; // 1+1 = 2, frequency of ch in str
 
-                count+=1;
+
+        for(int i=0; i <= str.length()-1; i++){
+                        //ababc
+           char each = str.charAt(i);  // a  b a b c
+
+            if( each == ch ){  // if true, means ch is occured in str
+                count += 1;
             }
-
-
-
         }
+
+    /*
+            int index = 0;
+            while(index <= str.length()-1  ){
+
+                char each = str.charAt(index);  // a  b a b c
+
+                if( each == ch ){  // if true, means ch is occured in str
+                    count += 1;
+                }
+
+              index++;
+            }
+    */
+
         System.out.println(count);
+
+
+
+
+
     }
+
+
+
 }

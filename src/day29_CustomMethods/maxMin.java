@@ -1,33 +1,48 @@
 package day29_CustomMethods;
 
-public class maxMin {
+public class MaxMin {
+
+    /*
+    11. wirte a method that can print out the maximum number from any array of integers
+	12. wirte a method that can print out the minimum number from any array of integers
+     */
+
     public static void main(String[] args) {
-        int arr[]={9,5,4,2,3,67,87};
-        maxNum(arr);
-        minNum(arr);
+
+        int[] numbers = {10, 9, 111, 20000, 10, 30, -100, -200};
+
+        maxNum(numbers);
+        minNum(numbers);
+
     }
+
+
 
     public static void maxNum(int[] arr){
+        int max = arr[0];
 
-        int max =arr[0];
-        for(int each:arr){
-            if(each>max){
-                max=each;
+        for( int each : arr ){
+            if(each > max){
+                max = each;
             }
         }
-        System.out.println("max"+max);
 
+        System.out.println("Max: "+max);
     }
+
 
     public static void minNum(int[] arr){
+        int min= arr[0];
 
-        int min =arr[0];
-        for(int each:arr){
-            if(each<min){
-                min=each;
+        for( int each : arr ){
+            if(each < min){
+                min = each;
             }
         }
-        System.out.println("min"+min);
 
+        System.out.println("Min: "+min);
     }
+
+
+
 }

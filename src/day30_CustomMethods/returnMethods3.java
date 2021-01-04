@@ -2,17 +2,32 @@ package day30_CustomMethods;
 
 import java.util.Arrays;
 
-public class returnMethods3 {
+public class ReturnMethods3 {
+
+
     public static void main(String[] args) {
-        int [] arr= {2,4,5,678,43,12,567,-9};
-        int num=max(arr);
+            int[] arr = {100, 200, 50, 40, 60};
+            int num = max(arr);
+
         System.out.println(num);
+        System.out.println(num > 300);
+
+       // int num2 = max2(arr);
+
 
     }
-    public static int max(int [] arr){
+
+
+    public static int max(int[] arr){
         Arrays.sort(arr);
-        int max=arr[arr.length-1];
+        int max = arr[arr.length-1];
         return max;
+    }
+
+
+    public static void max2(int[] arr){
+        Arrays.sort(arr);
+        int max = arr[arr.length-1];
 
     }
 

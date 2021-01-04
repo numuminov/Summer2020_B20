@@ -1,22 +1,66 @@
 package day18_ForLoop;
+/*
+2. write a program that can reverse the following string:
 
-public class reverse {
+                String str = "2. write a program that can reverse the following string:
+
+                String str = "Java";
+                output: avaJ
+
+            please provide two solutions:
+                        first solution, you MUST use substring method
+                        second solution, you MUST use charAt method java";
+                output: avaJ
+
+
+ */
+
+import java.util.Scanner;
+
+public class Reverse {
+
     public static void main(String[] args) {
         /*
-        // reverse the String
-        String str ="Java";
-        System.out.println(str.substring(1).concat(str.substring(0,1)));
+        Scanner scan= new Scanner(System.in);
+        String str = scan.next();
+                // avaJ ==> ava , J
 
-        //
-        char ch1 = str.charAt(0);
-        String str2 = str.substring(1)+ch1;
-        System.out.println(str2);
+           String s1 = str.substring(1);  //"ava"
+
+           String s2 = str.substring(0,1 ); //"J"
+
+       // char ch1 = str.charAt(0);
+
+        String result1 = s1+s2; // "avaJ"
+
+        System.out.println(result1);
+
+    // programming  ==> gnimmargorp
+
          */
-        String str1 ="Python";
-        String s1 =str1.substring(1);
-        String s2= str1.substring(0,1);
 
-        System.out.println(s1+s2);
+
+
+        String j="Javan";
+        String exp="";
+
+
+        for(int i=0;i<=j.length()-1;i++){
+
+            exp+=j.substring(j.length()-i-1,j.length()-i);
+
+
+            
+
+
+        }
+
+        System.out.println("exp = " + exp);
+
+
 
     }
+
+
+
 }

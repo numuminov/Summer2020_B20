@@ -3,7 +3,7 @@ package day33_LocalDateTime;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 
-public class practice2 {
+public class Practice2 {
     public static void main(String[] args) {
 
         String[] students = {"Kalbinur", "Virginia", "Odina", "Ernis", "Isa"};

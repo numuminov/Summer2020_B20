@@ -1,28 +1,24 @@
-package day21_loops;
+package day21_Loops;
 
-public class doWhile {
+public class DoWhile {
+
     public static void main(String[] args) {
-        boolean result=false;
-        while (result){
-            System.out.println("HEllo world");
+
+        boolean result = false;
+
+        while(result){
+            System.out.println("Hello World");
         }
 
-        do{
-            System.out.println("Hello");}while (result);
+        System.out.println("===============================");
 
-        }
+        do{ // just do it
 
+            System.out.println("Hello World");
 
-
+        }while(result);
 
 
 
     }
-
-
-
-
-
-
-
-
+}

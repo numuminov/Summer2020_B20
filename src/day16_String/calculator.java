@@ -1,52 +1,75 @@
 package day16_String;
+/*
+6. write a program to ask the user enter two number and a math operator.
+        ex:
+            10
+            20
+            *
+        output:
+            200
+
+            10
+            2
+            /
+        output:
+            5
+
+    precondition valid math operators are: *, / , +, -, %
+ */
 
 import java.util.Scanner;
 
-public class calculator {
+public class Calculator {
+
     public static void main(String[] args) {
-        Scanner scan= new Scanner(System.in);
+        Scanner scan = new Scanner(System.in);
+        System.out.println("ener your first number: ");
+        double num1 =  scan.nextDouble();
 
-        System.out.println("num");
-        double w1= scan.nextDouble();
+        System.out.println("ener your second number: ");
+        double num2 =  scan.nextDouble();
 
-        System.out.println("num");
-        double w2 =scan.nextDouble();
+        System.out.println("Enter your math operator: ");
+        char operator =    scan.next().charAt(0);
+        //@ , ~
+        //  *, / , +, -, %
+        boolean valid = operator == '*' || operator == '/' || operator == '%' || operator == '+' ||operator == '-';
 
-        System.out.println("operator");
-        char oper = scan.next().charAt(0);
-        boolean valid = oper=='*'||oper=='/'||oper=='%'||oper=='-'||oper=='+';
         if(valid){
-            switch (oper){
-                case'*':
-                    System.out.println(w1*w2);
+
+
+            switch(operator){
+                case '*':
+                    System.out.println(num1*num2);
                     break;
-                case'/':
-                    System.out.println(w1/w2);
+
+                case '/':
+                    System.out.println(num1/num2);
                     break;
-                case'%':
-                    System.out.println(w1%w2);
+
+                case '%':
+                    System.out.println(num1%num2);
                     break;
-                case'+':
-                    System.out.println(w1+w2);
+
+                case '+':
+                    System.out.println(num1+num2);
                     break;
+
                 default:
-                    System.out.println(w1+w2);
-
-
-
-
-
-
-
-
-
+                    System.out.println(num1 - num2);
             }
 
 
 
 
         }else{
-            System.out.println("Invalid op-r");
+            System.out.println("Invalid Operator");
         }
+
+
+
+
+
     }
+
 }

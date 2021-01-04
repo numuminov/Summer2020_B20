@@ -1,42 +1,57 @@
 package day12_Switch_Scanner;
 
-public class switch_practice1 {
+public class Switch_Practice1 {
+
     public static void main(String[] args) {
-        int n=54;
-        switch (n){
+
+        long c = 10; // 10L
+        float f = 10;  //10.0f
+        double d = 10; // 10.0
+
+
+       int num = 4;
+        String result = "";
+
+        switch(num){
             case 1:
-                System.out.println("mn");
+               result = "Monday";
                 break;
+
             case 2:
-                System.out.println("tu");
+               result = "Tuesday";
                 break;
+
             case 3:
-                System.out.println("wd");
+                result = "Wednesday";
                 break;
+
             case 4:
-                System.out.println("th");
+                result = "Thursday";
                 break;
+
             case 5:
-                System.out.println("fr");
+                result = "Friday";
                 break;
+
             case 6:
-                System.out.println("sa");
+                result = "Saturday";
                 break;
+
             case 7:
-                System.out.println("su");
+               result = "Sunday";
                 break;
+
             default:
-                System.out.println("inv");
-
-
-
-
-
-
-
-
-
+               result = "Invalid";
 
         }
+
+
+        System.out.println(result);
+
+
+
+
     }
+
 }

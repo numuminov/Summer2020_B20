@@ -2,15 +2,17 @@ package day23_Arrays;
 
 import java.util.Scanner;
 
-public class months {
+public class Months {
+
     public static void main(String[] args) {
-        String[] months ={"jan","feb","mar","apr","mai","jun","jul","aug","sep",
-                "okt","nov","dec"};
-        Scanner scan =new Scanner(System.in);
-        System.out.println("enter num");
-        int n = scan.nextInt();
-        System.out.println(months[n-1]);
+        String months[] = {"Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"};
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Enter a number between 1 ~ 12");
+        int n = scan.nextInt(); // 5
+
+        System.out.println( months[n-1] );
 
 
     }
+
 }

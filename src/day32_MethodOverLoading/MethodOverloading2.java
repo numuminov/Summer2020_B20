@@ -1,10 +1,13 @@
-package day32_MethodOverLoading;
+package day32_MethodOverloading;
 /*
+
 tasks1:
 	1. create a method that can find the addition of two numbers
 						addition2Numbers
+
 	2. create a method that can find the addition of three numbers
 				        addition3Numbers
+
 	3. create a method that can find the addition of four numbers
 						addition4Numbers
  */

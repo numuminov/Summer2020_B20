@@ -1,8 +1,8 @@
-package day32_MethodOverLoading;
+package day32_MethodOverloading;
 
 import java.util.Scanner;
 
-public class calculator {
+public class Calculator {
     /*
     2. write a return method that accepts two numbers and an operator, then returns calculation result.
 			 if the operator is invalid, return zero
@@ -30,7 +30,7 @@ public class calculator {
     // +, -, *, /, %
     public static double calculator(double num1, char oper, double num2){
         double result = (oper == '+')? num1+num2  :(oper == '-')? num1 - num2  :(oper == '*')? num1*num2
-                :(oper == '/')? num1/num2 :(oper == '%')? num1%num2 : 0;
+                        :(oper == '/')? num1/num2 :(oper == '%')? num1%num2 : 0;
 
         return result;
     }

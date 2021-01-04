@@ -45,7 +45,7 @@ public class ArraysUtility {
 
         System.out.println(  Arrays.equals(a1, a2) );
 
-        String w1 =  Arrays.toString(a1);
+       String w1 =  Arrays.toString(a1);
         System.out.println(w1);
 
 

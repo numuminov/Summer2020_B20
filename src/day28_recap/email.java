@@ -1,6 +1,16 @@
-package day28_recap;
+package day28_Recap;
+/*
+3. write a program that can get the name and domain of any given email address
+        Ex:
+            cybertek@gmail.com
 
-public class email {
+            output:
+                name: cybertek
+                domain: gmail
+ */
+
+public class Email {
+
     public static void main(String[] args) {
         String email = "Cybertek.School@yahoo.com";
 
@@ -10,5 +20,8 @@ public class email {
         System.out.println(name);
         System.out.println(domain);
 
+
     }
+
+
 }

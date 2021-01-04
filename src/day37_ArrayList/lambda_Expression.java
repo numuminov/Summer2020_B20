@@ -5,7 +5,7 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.function.Predicate;
 
-public class lambda_Expression {
+public class Lambda_Expression {
 
     public static void main(String[] args) {
 
@@ -13,7 +13,7 @@ public class lambda_Expression {
         list.addAll(Arrays.asList(1,1,1,2,3,4,4,4,5,6,7,8,9) );
 
         //Predicate<Integer>  lessThan5 =  p -> p < 5 ;
-        // list.removeIf( lessThan5  );
+       // list.removeIf( lessThan5  );
 
         list.removeIf( p -> p < 5  );
 
@@ -28,8 +28,8 @@ public class lambda_Expression {
             numbers.add(i);
         }
 
-        numbers.removeIf(oddNumbers);  //remove if the number is odd
-        numbers.removeIf( p -> p %2 ==0 );  // remove if the number is even
+       numbers.removeIf(oddNumbers);  //remove if the number is odd
+       numbers.removeIf( p -> p %2 ==0 );  // remove if the number is even
 
         System.out.println(numbers);
 
@@ -50,14 +50,13 @@ public class lambda_Expression {
         nums.addAll(Arrays.asList(1,1,1,2,2,2,3,3,3,4,5,6,7,8,8,9));
 
         nums.removeIf(  p ->   Collections.frequency(nums, p) != 1  );
-        //  for the elements that are not unique
+                            //  for the elements that are not unique
 
         System.out.println(nums);
 
         System.out.println("=========================================================");
 
         ArrayList<Character> chars = new ArrayList<>();
-
 
 
 

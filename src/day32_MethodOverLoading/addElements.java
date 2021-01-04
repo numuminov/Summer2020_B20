@@ -1,8 +1,8 @@
-package day32_MethodOverLoading;
+package day32_MethodOverloading;
 
 import java.util.Arrays;
 
-public class addElements {
+public class AddElements {
 
     public static void main(String[] args) {
         int[] arr = {1,2,3,4, 5,6,7,8,9};
@@ -11,11 +11,11 @@ public class addElements {
         // {1,2,3,4};
 
         int[] arr2 = new int[arr.length+1];
-        arr2[arr2.length-1] = num;
+       arr2[arr2.length-1] = num;
 
         int i =0;
         for(int each: arr){
-            arr2[i]  = each;
+           arr2[i]  = each;
             i++;
         }
 
@@ -26,7 +26,7 @@ public class addElements {
         int[] scores = {85,65,45,55, 95};
         int n1 = 87;
 
-        scores = addElement(scores, n1);
+            scores = addElement(scores, n1);
 
 
         System.out.println( Arrays.toString(scores));

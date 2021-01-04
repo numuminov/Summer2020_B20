@@ -1,18 +1,27 @@
-package day20_whileLoops;
+package day20_WhileLoops;
 
-public class whileLoop {
+public class WhileLoop {
+
     public static void main(String[] args) {
+
         if(true){
-            System.out.print("Hello");
+            System.out.println("Hello World");
         }
-        System.out.println("==============");
 
-       // while (true){
-         //   System.out.println("Hello W");infinitive
+        System.out.println("=====================================");
 
-      //  }
-        while (true){}
+        while(true){
+            System.out.println("Hello World");
+        }
+
+        /*
+        for(int i= 0; i ==0;){
+
+        }
+         */
+
 
 
     }
+
 }

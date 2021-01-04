@@ -28,11 +28,11 @@ public class Collections_Utility {
 
 
         ArrayList<String> list2 = new ArrayList<>();
-        list2.add("A");
-        list2.add("B");
-        list2.add("C");
-        list2.add("D");
-        list2.add("E");
+                list2.add("A");
+                list2.add("B");
+                list2.add("C");
+                list2.add("D");
+                list2.add("E");
 
         System.out.println(list2);
 
@@ -47,12 +47,12 @@ public class Collections_Utility {
 
 
         ArrayList<Character> charList = new ArrayList<>();
-        charList.add('A');
-        charList.add('B');
-        charList.add('A');
-        charList.add('A');
-        charList.add('A');
-        charList.add('C');
+                charList.add('A');
+                charList.add('B');
+                charList.add('A');
+                charList.add('A');
+                charList.add('A');
+                charList.add('C');
 
         int count =  Collections.frequency(charList, 'B');
 

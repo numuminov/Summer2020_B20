@@ -11,7 +11,7 @@ public class SortDescending {
 
         Arrays.sort(arr); //{1,2,3,4,5};
 
-        //   System.out.println(Arrays.toString(arr));
+     //   System.out.println(Arrays.toString(arr));
 
         int[] arr2 = new int[arr.length];  //{5,4,3,2,1};
 
@@ -43,7 +43,7 @@ public class SortDescending {
 
         System.out.println("===============================");
         double[] n1 = {5.5, 6.5, 2.5, 3.5, 1.5, 0, 0.5};
-        n1 =  sortDesc(n1);
+           n1 =  sortDesc(n1);
 
         System.out.println( Arrays.toString(n1) );
 

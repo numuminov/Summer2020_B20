@@ -1,24 +1,64 @@
 package day19_ForLoop;
+/*
+    7. write a program that can calculate the sum of all numbers between 1 to any given number
+        ex:
+            input: 100
+            output: 5050
+
+            input: 50
+            output: 1275
+ */
 
 import java.util.Scanner;
 
-public class sumOfnums {
+public class SumOfNums {
+
     public static void main(String[] args) {
+
+        /*
         Scanner scan = new Scanner(System.in);
-        System.out.println("enter number");
+        System.out.println("Enter a number");
         int num = scan.nextInt();
-        int sum=0;
-        if(num>0){for(int i=0;i<=num;i++){sum+=i;
 
+        int sum = 0;
 
+        if(num > 0){
 
+            for(int i = 1; i <= num; i++){
+               // sum = sum + i;
+                sum += i;
+            }
 
-
-        }
             System.out.println(sum);
-    }else{
+
+        }else{
             System.out.println("Invalid Entry");
+        }
+
+
+         */
+
+        Scanner scanner=new Scanner(System.in);
+        int first = scanner.nextInt();
+        int second = scanner.nextInt();
+        int sum=0;
+
+        if(first<second){
+
+        for (int i=first; i<=second;i++){
+
+            sum+=i;
+
+        }}else {
+            System.out.println("invalid numbers");
+        }
+
+        System.out.println("sum = " + sum);
+
+
+
 
 
     }
-}}
+
+}

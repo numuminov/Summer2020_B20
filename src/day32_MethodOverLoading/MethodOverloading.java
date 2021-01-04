@@ -1,4 +1,4 @@
-package day32_MethodOverLoading;
+package day32_MethodOverloading;
 
 import java.util.Arrays;
 

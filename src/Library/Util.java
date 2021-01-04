@@ -4,6 +4,12 @@ import java.util.Arrays;
 
 public class Util {
 
+    int c= 300;
+    public  void Multiply6(){
+        System.out.println(c*6);
+    }
+
+
     // import Library.Util;
 
     public static String removeDup(String str){
@@ -17,7 +23,7 @@ public class Util {
 
         return nonDup;
     }
-    // removes the duplicates and returns the value string
+        // removes the duplicates and returns the value string
 
     public static String reverse(String str){
         String result = "";
@@ -26,7 +32,7 @@ public class Util {
         }
         return result;
     }
-    // reverse the string and retunr the value
+        // reverse the string and retunr the value
 
     public static int frequency(String str, char ch){
         int count = 0;
@@ -52,7 +58,7 @@ public class Util {
 
         return uniques;
     }
-    // retunrs the uniiques from the string
+      // retunrs the uniiques from the string
 
     public static String frequencyOfChars(String str){
 
@@ -66,7 +72,7 @@ public class Util {
 
         return expectedResult;
     }
-    // returns the frequency of every single characters from a string
+        // returns the frequency of every single characters from a string
 
     public static  String  formatFullName(String first , String last){
         first = first.substring(0, 1).toUpperCase() +  first.substring(1).toLowerCase();
@@ -92,7 +98,49 @@ public class Util {
 
         return max;
     }
-    // find and returns the max number from in array
+    // find and returns the max number from int array
+
+
+    public static Integer maxNum(Integer[] arr){
+        Integer max = arr[0];
+
+        for( Integer each : arr ){
+            if(each > max){
+                max = each;
+            }
+        }
+
+        return max;
+    }
+    // find and returns the max number from Integer array
+
+    public static double maxNum(double[] arr){
+        double max = arr[0];
+
+        for( double each : arr ){
+            if(each > max){
+                max = each;
+            }
+        }
+
+        return max;
+    }
+    // find and returns the max number from double array
+
+
+    public static Double maxNum(Double[] arr){
+        Double max = arr[0];
+
+        for( Double each : arr ){
+            if(each > max){
+                max = each;
+            }
+        }
+
+        return max;
+    }
+    // find and returns the max number from Double array
+
 
     public static int minNum(int[] arr){
         int min= arr[0];
@@ -103,13 +151,53 @@ public class Util {
             }
         }
 
+       return min;
+    }
+    // find and returns the min number from int array
+
+    public static double minNum(double[] arr){
+        double min= arr[0];
+
+        for( double each : arr ){
+            if(each < min){
+                min = each;
+            }
+        }
+
         return min;
     }
-    // find and returns the min number from in array
+    // find and returns the min number from double array
 
-    public static int[] addElement(int[] arr, int num){
+    public static Integer minNum(Integer[] arr){
+        Integer min= arr[0];
+
+        for( Integer each : arr ){
+            if(each < min){
+                min = each;
+            }
+        }
+
+        return min;
+    }
+    // find and returns the min number from double array
+
+    public static Double minNum(Double[] arr){
+        Double min= arr[0];
+
+        for( Double each : arr ){
+            if(each < min){
+                min = each;
+            }
+        }
+
+        return min;
+    }
+    // find and returns the min number from double array
+
+
+    public static int[] addElement(int[] arr, int element){
         int[] arr2 = new int[arr.length+1];
-        arr2[arr2.length-1] = num;
+        arr2[arr2.length-1] = element;
 
         int i =0;
         for(int each: arr){
@@ -119,7 +207,92 @@ public class Util {
 
         return arr2;
     }
+        // inserts the element to the array
+
+    public static double[] addElement(double[] arr, double element){
+        double[] arr2 = new double[arr.length+1];
+        arr2[arr2.length-1] = element;
+
+        int i =0;
+        for(double each: arr){
+            arr2[i]  = each;
+            i++;
+        }
+
+        return arr2;
+    }
     // inserts the element to the array
+
+    public static char[] addElement(char[] arr, char element){
+        char[] arr2 = new char[arr.length+1];
+        arr2[arr2.length-1] = element;
+
+        int i =0;
+        for(char each: arr){
+            arr2[i]  = each;
+            i++;
+        }
+
+        return arr2;
+    }
+    // inserts the element to the array
+
+    public static String[] addElement(String[] arr, String element){
+        String[] arr2 = new String[arr.length+1];
+        arr2[arr2.length-1] = element;
+
+        int i =0;
+        for(String each: arr){
+            arr2[i]  = each;
+            i++;
+        }
+
+        return arr2;
+    }
+    // inserts the element to the array
+
+    public static Integer[] addElement(Integer[] arr, Integer element){
+        Integer[] arr2 = new Integer[arr.length+1];
+        arr2[arr2.length-1] = element;
+
+        int i =0;
+        for(Integer each: arr){
+            arr2[i]  = each;
+            i++;
+        }
+
+        return arr2;
+    }
+    // inserts the element to the array
+
+    public static Double[] addElement(Double[] arr, Double element){
+        Double[] arr2 = new Double[arr.length+1];
+        arr2[arr2.length-1] = element;
+
+        int i =0;
+        for(Double each: arr){
+            arr2[i]  = each;
+            i++;
+        }
+
+        return arr2;
+    }
+    // inserts the element to the array
+
+    public static Character[] addElement(Character[] arr, Character element){
+        Character[] arr2 = new Character[arr.length+1];
+        arr2[arr2.length-1] = element;
+
+        int i =0;
+        for(Character each: arr){
+            arr2[i]  = each;
+            i++;
+        }
+
+        return arr2;
+    }
+    // inserts the element to the array
+
 
     public static int[]  sortDesc(int[] arr){
         Arrays.sort(arr);
@@ -134,7 +307,7 @@ public class Util {
 
         return arr2;
     }
-    // sorts int array in descending order and returns it
+        // sorts int array in descending order and returns it
 
     public static double[] sortDesc(double[] arr){
         Arrays.sort(arr);
@@ -228,7 +401,8 @@ public class Util {
 
         return arr2;
     }
-    //sorts Character array in descending order
+        //sorts Character array in descending order
+
 
     public static int[] combine2Arrays(int[] arr1, int[] arr2){
         int[] arr3 = new int[arr1.length + arr2.length];
@@ -355,6 +529,14 @@ public class Util {
         return arr3;
     }
     // combines two array and returns it
+    public static void sleep(double seconds){
+        try {
+            Thread.sleep((long)(seconds * 1000));
+        }catch (InterruptedException e){
+
+        }
+    }
+    // causes the current execution thread to sleep for given seconds
 
 
 

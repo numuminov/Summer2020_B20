@@ -1,7 +1,10 @@
 package day27_recap;
 
-public class forEachLoop {
-    public static void main(String[] args) {int[] arr = {10,20,30,40,50};
+public class ForEachLoop {
+
+    public static void main(String[] args) {
+
+        int[] arr = {10,20,30,40,50};
         //            0  1  2  3  4
 
         for(int i = 0; i <= arr.length-1; i++){
@@ -77,5 +80,3 @@ public class forEachLoop {
 
 
 }
-
-
